@@ -5,17 +5,38 @@ layout: boilerplate
 <div class='row'>
   <div class='col-md-3'></div>
   <div class='col-md-6 manicure'>
-    <h1>{{ manicure.title }}</h1>
     {% include manicure.html imgur = page.imgur polishes = page.polishes tools = page.tools %}
     <div class='row navigation'>
       <div class='col-md-4'>
-
+        {% assign match = false %}
+        {% for other_mani in site.categories.manicures reversed %}
+          {% if match == true %}
+            {% if page.url < other_mani.url %}
+              Next: <a href='{{ other_mani.url }}'>{{ other_mani.title }}</a>
+            {% endif %}
+            {% break %}
+          {% endif %}
+          {% if page.url == other_mani.url %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
       </div>
       <div class='col-md-4'>
-        <a href='/manicures/'>All manicures</a>
+        <a href='/manicures/'>Full list</a>
       </div>
       <div class='col-md-4'>
-        
+        {% assign match = false %}
+        {% for other_mani in site.categories.manicures %}
+          {% if match == true %}
+            {% if page.url > other_mani.url %}
+              Previous: <a href='{{ other_mani.url }}'>{{ other_mani.title }}</a>
+            {% endif %}
+            {% break %}
+          {% endif %}
+          {% if page.url == other_mani.url %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
