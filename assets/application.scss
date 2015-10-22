@@ -46,50 +46,15 @@ body {
   }
 }
 
-.sidebar {
-  h2 {
-    font-size: 1.5em;
-  }
-
-  background-color: $brand-primary;
-  a {
-    color: white;
-  }
-
-  text-align: right;
-
-  padding-top: $padding-small-vertical;
-  padding-bottom: $padding-small-vertical;
-  margin-bottom: $padding-small-vertical;
-
-  h2 {
-    font-size: 2.5em;
-  }
-  font-size: 0.5em;
-}
-
-.blost {
-  h2 {
-    font-variant: italic;
-    font-size: 1em;
-    color: $gray-light;
+.manicure {
+  .navigation {
+    a {
+      text-align: right;
+    }
   }
 }
 
-.plants-list, .animals-list, .blog-archive {
-  dt {
-    font-size: 2em;
-  }
-
-  a {
-  }
-
-  .fa {
-    font-size: 0.5em;
-  }
-}
-
-.blog-archive {
+.manicure-archive {
   dt {
     padding-top: $padding-large-vertical;
   }
@@ -99,77 +64,20 @@ body {
   font-size: 0.7em;
 }
 
-
-.comments {
-  h1 {
-    font-size: 1.5em;
-  }
-}
-
-/* Dragones below this line */
-
-nav {
+.header {
   background-color: $brand-primary;
-}
-
-.navbar-default .navbar-nav > .active > a {
-}
-
-.navbar {
-  border: 0px;
-  background-color: $brand-primary;
-}
-
-/* navbar */
-.navbar-default {
-}
-/* title */
-.navbar-default .navbar-brand {
-  color: white;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-}
-/* link */
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  opacity: 0.5;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  opacity: 0.5;
-}
-
-.navbar {
-  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
-}
-
-/* mobile version */
-.navbar-default .navbar-toggle {
-  border-color: #DDD;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #DDD;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #CCC;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  position: relative;
+  .slogan {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
   }
 }
