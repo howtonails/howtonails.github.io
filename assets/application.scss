@@ -1,0 +1,175 @@
+---
+---
+
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'bootstrap';
+
+$footer-height: 50px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+
+  a:hover {
+    text-decoration: none;
+    color: $gray;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $brand-primary;
+
+  margin-top: $padding-large-vertical;
+
+  opacity: 1;
+  color: white;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $gray;
+  }
+}
+
+.sidebar {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  background-color: $brand-primary;
+  a {
+    color: white;
+  }
+
+  text-align: right;
+
+  padding-top: $padding-small-vertical;
+  padding-bottom: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
+
+  h2 {
+    font-size: 2.5em;
+  }
+  font-size: 0.5em;
+}
+
+.blost {
+  h2 {
+    font-variant: italic;
+    font-size: 1em;
+    color: $gray-light;
+  }
+}
+
+.plants-list, .animals-list, .blog-archive {
+  dt {
+    font-size: 2em;
+  }
+
+  a {
+  }
+
+  .fa {
+    font-size: 0.5em;
+  }
+}
+
+.blog-archive {
+  dt {
+    padding-top: $padding-large-vertical;
+  }
+}
+
+.license {
+  font-size: 0.7em;
+}
+
+
+.comments {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Dragones below this line */
+
+nav {
+  background-color: $brand-primary;
+}
+
+.navbar-default .navbar-nav > .active > a {
+}
+
+.navbar {
+  border: 0px;
+  background-color: $brand-primary;
+}
+
+/* navbar */
+.navbar-default {
+}
+/* title */
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  opacity: 0.5;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  opacity: 0.5;
+}
+
+.navbar {
+  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+  }
+}

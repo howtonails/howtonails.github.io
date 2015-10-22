@@ -1,0 +1,12 @@
+<dl class='manicure-archive'>
+  {% for manicure in site.categories.manicures %}
+    {% unless manicure.url == page.url %}
+      {% include manicure-link.html title = manicure.title url = manicure.url no_excerpts = include.no_excerpts no_fa = include.no_fa excerpt = manicure.excerpt %}
+    {% endunless %}
+    {% if include.hr %}
+      {% if forloop.rindex > 1 %}
+        <hr />
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</dl>
