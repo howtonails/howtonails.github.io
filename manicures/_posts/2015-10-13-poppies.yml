@@ -10,7 +10,18 @@ polishes:
   - brand: Maybelline Super Stay 7
     number: 20
     shade: Uptown Blue
-
+  - brand: Sally Hansen Complete Salon Manicure
+    number: 530
+    shade: Back to the Fuschia
+  - brand: Rimmel 60 Seconds Super Shine
+    number: 452
+    shade: Chin Up, Buttercup
+  - brand: Sally Hansen Complete Salon Manicure
+    number: 414
+    shade: Cherry, Cherry, Bang, Bang
+  - brand: Sally Hansen Complete Salon Manicure
+    number: 550
+    shade: All Fired Up
 tools:
   - Freehand brush
   - Dotting tool

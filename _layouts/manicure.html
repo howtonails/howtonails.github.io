@@ -5,31 +5,16 @@ layout: boilerplate
 <div class='row'>
   <div class='col-md-3'></div>
   <div class='col-md-6 manicure'>
-    {% include manicure.html imgur = page.imgur polishes = page.polishes tools = page.tools %}
+    {% include manicure.html imgur = page.imgur polishes = page.polishes tools = page.tools date = page.date %}
     <div class='row navigation'>
-      <div class='col-md-4'>
+      <div class='col-md-12'>
         {% assign match = false %}
-        {% for other_mani in site.categories.manicures reversed %}
-          {% if match == true %}
-            {% if page.url < other_mani.url %}
-              Next: <a href='{{ other_mani.url }}'>{{ other_mani.title }}</a>
-            {% endif %}
-            {% break %}
-          {% endif %}
-          {% if page.url == other_mani.url %}
-            {% assign match = true %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      <div class='col-md-4'>
-        <a href='/manicures/'>Full list</a>
-      </div>
-      <div class='col-md-4'>
-        {% assign match = false %}
+        {% assign any = false %}
         {% for other_mani in site.categories.manicures %}
           {% if match == true %}
             {% if page.url > other_mani.url %}
-              Previous: <a href='{{ other_mani.url }}'>{{ other_mani.title }}</a>
+              <a href='{{ other_mani.url }}'>Previous</a>
+              {% assign any = true %}
             {% endif %}
             {% break %}
           {% endif %}
@@ -37,6 +22,29 @@ layout: boilerplate
             {% assign match = true %}
           {% endif %}
         {% endfor %}
+        {% unless any %}
+          <span class='inactive'>Previous</span>
+        {% endunless %}
+        |
+        <a href='/manicures/'>Full list</a>
+        |
+        {% assign match = false %}
+        {% assign any = false %}
+        {% for other_mani in site.categories.manicures reversed %}
+          {% if match == true %}
+            {% if page.url < other_mani.url %}
+              <a href='{{ other_mani.url }}'>Next</a>
+              {% assign any = true %}
+            {% endif %}
+            {% break %}
+          {% endif %}
+          {% if page.url == other_mani.url %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
+        {% unless any %}
+          <span class='inactive'>Next</span>
+        {% endunless %}
       </div>
     </div>
   </div>

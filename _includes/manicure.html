@@ -6,13 +6,14 @@
     </blockquote>
     <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
   </div>
-  <dl>
+  <dl class='polishes'>
     <dt>Polishes</dt>
     <dd>
       <ul>
       {% for polish in include.polishes %}
         <li>
-            {{ polish['brand'] }} <strong>#{{ polish['number'] }}</strong> <em>{{ polish['shade'] }}</em>
+          <i class='fa fa-hand-o-right'></i>
+{{ polish['brand'] }} <strong>#{{ polish['number'] }}</strong> <em>{{ polish['shade'] }}</em>
         </li>
       {% endfor %}
       </ul>
@@ -23,10 +24,19 @@
       <dd>
         <ul>
         {% for tool in include.tools %}
-          <li>{{ tool }}</li>
+          <li><i class='fa fa-hand-o-right'></i> {{ tool }}</li>
         {% endfor %}
         </ul>
       </dd>
     </dl>
     {% endif %}
-  
+    {% if include.date %}
+      <dl>
+        <dt>Date</dt>
+        <dd>
+          <ul>
+            <li><i class='fa fa-hand-o-right'></i> {{ include.date | date: "%Y-%m-%d" }}</li>
+          </ul>
+        </dd>
+      </dl>
+    {% endif %}
