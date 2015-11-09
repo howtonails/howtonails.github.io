@@ -6,10 +6,9 @@
   <dd>
     <ul>
     {% for polish in include.polishes %}
-      {% assign p = site.data.polishes[polish] %}
       <li>
         <i class='fa fa-hand-o-right'></i>
-        {% include polish.html polish = p %}
+        {% include polish.html polish = polish %}
       </li>
     {% endfor %}
     </ul>

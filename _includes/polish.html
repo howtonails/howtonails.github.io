@@ -1,1 +1,5 @@
-{{ include.polish.brand] }} <strong>#{{ include.polish.number }}</strong> <em>{{ include.polish.shade }}</em>
+{% assign parts = include.polish | split: '|' %}
+{% assign brand = parts[0] %}
+{% assign number = parts[1] %}
+{% assign shade = site.data.polishes[brand][number] %}
+{{ brand] }} <strong>#{{ number }}</strong> <em>{{ shade }}</em>
