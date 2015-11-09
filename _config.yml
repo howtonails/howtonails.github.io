@@ -16,5 +16,3 @@ defaults:
       parent: manicures
 
 permalink: pretty
-
-exclude: [vendor]

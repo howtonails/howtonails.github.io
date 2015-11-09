@@ -22,14 +22,6 @@ body {
   }
 }
 
-.navigation {
-  text-align: center;
-
-  .inactive {
-    color: $gray-lighter;
-  }
-}
-
 .polishes {
   strong {
     font-family: $font-family-numbers;
@@ -77,9 +69,6 @@ body {
   dt {
     padding-top: $padding-large-vertical;
   }
-}
-
-.license {
 }
 
 dt {

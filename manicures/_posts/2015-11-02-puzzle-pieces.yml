@@ -1,41 +1,21 @@
 ---
 imgur: haRFDe0
 polishes:
-  - brand: Essie
-    number: 92
-    shade: Aruba Blue
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 530
-    shade: Back to the Fuschia
+  - Essie 92
+  - Sally Hansen 530
 
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 414
-    shade: Cherry, Cherry, Bang, Bang
-  - brand: China Glaze
-    number: 653
-    shade : Solar Power
+  - Sally Hansen 414
+  - China Glaze 653
 
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 673
-    shade: Blue Streak
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 545
-    shade: Fiery Island
+  - Sally Hansen 673
+  - Sally Hansen 545
 
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 530
-    shade: Back to the Fuschia
-  - brand: Maybelline Super Stay 7
-    number: 20
-    shade: Uptown Blue
+  - Sally Hansen 530
+  - Maybelline 20
 
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 660
-    shade: Pat on the Black
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 550
-    shade: All Fired Up
-    
+  - Sally Hansen 660
+  - Sally Hansen 550
+
 tools:
   - Twinkled T <a href='http://www.twinkledt.com/products/puzzle-piece-vinyls'>Puzzle Piece Vinyls</a>
 ---

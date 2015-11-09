@@ -1,27 +1,14 @@
 ---
 imgur: 9huAwAh
 polishes:
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 545
-    shade: Firey Island
-  - brand: Barry M Gelly Hi Shine
-    number: GNP29
-    shade : Chai
-  - brand: Maybelline Super Stay 7
-    number: 20
-    shade: Uptown Blue
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 530
-    shade: Back to the Fuschia
-  - brand: Rimmel 60 Seconds Super Shine
-    number: 452
-    shade: Chin Up, Buttercup
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 414
-    shade: Cherry, Cherry, Bang, Bang
-  - brand: Sally Hansen Complete Salon Manicure
-    number: 550
-    shade: All Fired Up
+  - Sally Hansen 545
+  - Barry M GNP29
+  - Maybelline 20
+  - Sally Hansen 530
+  - Rimmel 452
+  - Sally Hansen 414
+  - Sally Hansen 550
+
 tools:
   - Freehand brush
   - Dotting tool
