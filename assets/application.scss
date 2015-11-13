@@ -22,6 +22,14 @@ body {
   }
 }
 
+.navigation {
+  text-align: center;
+
+  .inactive {
+    color: $gray-lighter;
+  }
+}
+
 .polishes {
   strong {
     font-family: $font-family-numbers;
@@ -88,7 +96,7 @@ li {
   margin-bottom: 20px;
   position: relative;
   .slogan {
-    color: white;
+    color: $brand-secondary;
     font-weight: bold;
     font-size: 2em;
     position: absolute;
