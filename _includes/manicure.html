@@ -13,7 +13,9 @@
     {% endfor %}
     </ul>
   </dd>
-  {% if include.tools %}
+</dl>
+
+{% if include.tools %}
   <dl>
     <dt>Tools</dt>
     <dd>
@@ -24,15 +26,26 @@
       </ul>
     </dd>
   </dl>
-  {% endif %}
-  {% if include.date %}
-    <dl>
-      <dt>Date</dt>
-      <dd>
-        <ul>
-          <li><i class='fa fa-hand-o-right'></i> {{ include.date | date: "%Y-%m-%d" }}</li>
-        </ul>
-      </dd>
-    </dl>
-  {% endif %}
-</dl>
+{% endif %}
+{% if include.topcoats %}
+  <dl>
+    <dt>Topcoat{% if include.topcoats.size > 1 %}s{% endif %}</dt>
+    <dd>
+      <ul>
+      {% for topcoat in include.topcoats %}
+        <li><i class='fa fa-hand-o-right'></i> {{ topcoat }}</li>
+      {% endfor %}
+      </ul>
+    </dd>
+  </dl>
+{% endif %}
+{% if include.date %}
+  <dl>
+    <dt>Date</dt>
+    <dd>
+      <ul>
+        <li><i class='fa fa-hand-o-right'></i> {{ include.date | date: "%Y-%m-%d" }}</li>
+      </ul>
+    </dd>
+  </dl>
+{% endif %}
