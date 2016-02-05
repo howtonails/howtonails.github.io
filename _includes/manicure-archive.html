@@ -1,5 +1,5 @@
 <dl class='manicure-archive'>
-  {% for manicure in site.categories.manicures %}
+  {% for manicure in site.posts %}
     <a href='{{ manicure.url }}'>{{ manicure.title }}</a>
     {% include manicure.html imgur = manicure.imgur polishes = manicure.polishes topcoats = manicure.topcoats tools = manicure.tools %}
     {% if include.hr %}
